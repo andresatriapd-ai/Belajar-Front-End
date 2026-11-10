@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Keren</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: #020617;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jezter Cloud</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Produk</a>
+    <a href="#">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Produk Digital Modern</h2>
+  <p>Solusi terbaik untuk kebutuhan kamu. Desain futuristik, performa tinggi, dan harga terjangkau.</p>
+  <a href="#" class="btn">Beli Sekarang</a>
+</section>
+
+<section class="products">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Produk 1">
+    <h3>Produk 1</h3>
+    <p>Deskripsi singkat produk.</p>
+    <a href="#" class="btn">Detail</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Produk 2">
+    <h3>Produk 2</h3>
+    <p>Deskripsi singkat produk.</p>
+    <a href="#" class="btn">Detail</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Produk 3">
+    <h3>Produk 3</h3>
+    <p>Deskripsi singkat produk.</p>
+    <a href="#" class="btn">Detail</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MyProduct. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

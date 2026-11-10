@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+<style>
+    .isihtml {
+        content: test;
+    }
+    .isihtml:before {
+        content: "|ini di isi di css| ";
+    }
+    .isihtml::after {
+        content: "|ini di isi di css |";
+    }
+
+</style>
+</head>
+<body>
+    <p class="isihtml">ini isi HTML</p>
+    
+</body>
+</html>

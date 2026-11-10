@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombol Kabur</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Biar gak muncul scrollbar pas tombol kabur keluar layar */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Tombol Utama */
+        .btn {
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.1s ease;
+        }
+
+        .btn-yes {
+            background-color: #2ecc71;
+            color: white;
+            margin-right: 15px;
+        }
+
+        /* Tombol yang bakal kabur */
+        #btn-escape {
+            background-color: #e74c3c;
+            color: white;
+            position: absolute; /* PENTING: Harus absolute supaya bisa dipindah-pindah posisinya */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Apakah kamu mau memaafkan aku? 🥺</h2>
+        <button class="btn btn-yes" onclick="alert('Yay! Makasih ❤️')">Mau</button>
+        <button class="btn" id="btn-escape">Enggak</button>
+    </div>
+
+    <script>
+        const escapeBtn = document.getElementById('btn-escape');
+
+        // Fungsi untuk mindahin tombol ke posisi acak
+        function kabur() {
+            // Menghitung batas maksimal area layar agar tombol gak kabur keluar screen
+            const maxX = window.innerWidth - escapeBtn.offsetWidth;
+            const maxY = window.innerHeight - escapeBtn.offsetHeight;
+            console.log (kabur)
+
+            // Generate angka acak untuk posisi X dan Y
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+
+            // Terapkan posisi baru ke tombol
+            escapeBtn.style.left = randomX + 'px';
+            escapeBtn.style.top = randomY + 'px';
+        }
+
+        // Trigger fungsi 'kabur' saat mouse menyentuh area tombol
+        escapeBtn.addEventListener('mouseenter', kabur);
+    </script>
+
+</body>
+</html>

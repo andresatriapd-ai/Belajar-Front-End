@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Interior Design</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.5);
+      color: white;
+    }
+
+    /* LOGO + TEXT */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 90px;
+    }
+
+    .logo h2 {
+      margin: 0;
+      letter-spacing: 7px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+    }
+
+    /* GARIS HOVER */
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: white;
+      bottom: -5px;
+      left: 0;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') center/cover;
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
+      color: white;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <!-- GANTI LOGO DI SINI -->
+    <img src="logo.png.png" alt="logo">
+    <h2>INTERIOR</h2>
+  </div>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Project</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Modern Interior Design</h1>
+  </div>
+</section>
+
+</body>
+</html>

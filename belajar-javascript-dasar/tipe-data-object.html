@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            "nama" : "Andre Satria" ,
+            alamat : "Indonesia",
+            umur : 26
+        };
+
+        // metode ke 2 
+        // Menambah atau Mengubah
+        // person ["nama"] = "Andre Satria" ;
+        // person ["alamat"] = "Indonesia" ;
+        // person ["umur"] = 26 ;
+
+        console.info (`Nama : ${person.nama}`)
+        console.info (`alamat : ${person.alamat}`)
+        console.info (`umur : ${person.umur}`)
+
+
+        console.table (person)
+
+        delete person ["umur"]
+        console.table (person)
+
+
+
+    </script>
+
+</body>
+</html>

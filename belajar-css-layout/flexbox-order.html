@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox order</title>
+    <style>
+        .container {
+            display: flex;
+            /* mengatur tampilan dari atas ke bawah */
+            flex-direction:row;
+            flex-wrap: wrap;
+            
+        }
+        .content {
+            width: 300px;
+            background-color: red;
+            border: 2px solid blue;
+            margin: 20px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="content" style="order: 4;">
+        <h1> Ini Konten 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, facilis. Corrupti reprehenderit odio velit ea necessitatibus, nostrum, fugit fuga molestiae repellendus voluptates sit illum hic, totam quisquam vero magni quos!</p>
+
+    </div>
+    <div class="content" style="order: 1;">
+        <h1> Ini Konten 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, facilis. Corrupti reprehenderit odio velit ea necessitatibus, nostrum, fugit fuga molestiae repellendus voluptates sit illum hic, totam quisquam vero magni quos!</p>
+
+    </div>
+    <div class="content" style="order: 2;">
+        <h1> Ini Konten 3</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, facilis. Corrupti reprehenderit odio velit ea necessitatibus, nostrum, fugit fuga molestiae repellendus voluptates sit illum hic, totam quisquam vero magni quos!</p>
+
+    </div>
+    <div class="content" style="order: 3;">
+        <h1> Ini Konten 4</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, facilis. Corrupti reprehenderit odio velit ea necessitatibus, nostrum, fugit fuga molestiae repellendus voluptates sit illum hic, totam quisquam vero magni quos!</p>
+
+    </div>
+
+ 
+    </div>
+    
+</body>
+</html>

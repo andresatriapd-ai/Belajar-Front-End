@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello (firstName,lastName){
+            const say = `Hello ${firstName} ${lastName}`;
+            return say; 
+        }
+
+        const result = sayHello("Andre","Satria")
+        document.writeln(`<p>${result}</p>`);
+
+        function isContains (array, searchValue){
+            for (const element of array){
+                console.info(`iterasi element ${element}`);
+                if(element === searchValue){
+                    return true;
+                }
+        }
+        
+            return false;
+        }
+        const array = [1,23,33,4324,3,33,35,54,43,56,66,8];
+        const search = 33;
+        const found = isContains(array,search);
+        document.writeln(`<p>Apakah ${search} ada di dalam array? ${found}</p>`);
+
+    </script>
+    
+</body>
+</html>

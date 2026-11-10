@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function sum(name, ...data) {
+            let total = 0;
+            for (const item of data) {
+                total += item;
+            }
+            document.writeln (`<p> Hasil ${name} : ${total}</p>`);
+        }
+
+        sum("Mangga",10,20,30,40,50);
+        sum("Apel",10,20,30,40,50,60,70,80,90);
+        sum("Jeruk",10,20,30,40,50,60,70,80,90,100,110,120);
+
+        // spread syntac
+        const values = [10,10,10,10,10];
+        sum("Test", ...values);
+
+    </script>
+    
+</body>
+</html>

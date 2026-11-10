@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Popup Saat Scroll</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <strong>ScrollPop</strong>
+        <span>Demo efek section</span>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Contoh sederhana</p>
+        <h1>Section muncul pop-up saat kamu scroll ke bawah.</h1>
+        <p>
+          Efek ini memakai Intersection Observer, jadi animasi berjalan ketika
+          elemen benar-benar masuk area layar.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="reveal section">
+        <p class="number">01</p>
+        <h2>Produk Lebih Terlihat</h2>
+        <p>
+          Saat section ini masuk viewport, card akan naik sedikit, membesar
+          halus, lalu opacity berubah menjadi penuh.
+        </p>
+      </section>
+
+      <section class="reveal section accent">
+        <p class="number">02</p>
+        <h2>Konten Terasa Hidup</h2>
+        <p>
+          Kamu bisa memasang class <code>reveal</code> ke semua section,
+          footer, card, atau elemen lain yang ingin diberi reaksi.
+        </p>
+      </section>
+
+      <section class="reveal section">
+        <p class="number">03</p>
+        <h2>Ringan dan Mudah Dipakai</h2>
+        <p>
+          Tidak perlu library tambahan. Cukup HTML, CSS, dan sedikit JavaScript.
+        </p>
+      </section>
+    </main>
+
+    <footer class="reveal footer">
+      <p>Footer juga ikut pop-up ketika sampai di bawah.</p>
+      <strong>Siap dipakai sebagai contoh.</strong>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

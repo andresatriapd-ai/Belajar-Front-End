@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import</title>
+    
+    <style>
+
+        @layer b, a;
+        
+       @layer a {
+        h1 {color: yellow;
+
+        }
+       }
+
+       @layer b {
+        h1 {
+            color: green;
+        }
+       }
+       
+
+        body {
+            background-color: grey;
+        }
+        
+    </style>
+    <!-- Link tersebut adalah  author stylesheet
+     h1 adalah user stylesheet ,ketika double di style tersebut akan dipilih yang terakhir-->
+
+</head>
+<body>
+    <h1>INI JUDUL</h1>
+    <h2>ini sub judul</h2>
+</body>
+</html>

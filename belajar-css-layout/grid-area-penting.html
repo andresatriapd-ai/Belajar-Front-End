@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container {
+            
+            display: grid;
+            grid-template-columns:  100px  auto 100px ;
+            grid-template-rows:  50px  auto  100px ;
+            grid-template-areas: 
+            "header header header"
+            ". content ."
+            "footer footer footer";
+        }
+        .header {
+            text-align: center;
+            background-color: red;    
+            grid-area: header;
+        }
+        
+        .content {
+            background-color: green;
+            grid-area: content;
+        }
+       
+
+        
+        .footer {
+            background-color: yellow;
+            grid-area: footer;
+           padding: 10px; 
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang di web saya
+        </div>
+        <div class="content">
+            <h1>Andre Satria Putra Dwifa</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem a voluptate odit aliquid sint suscipit laboriosam, quis rerum beatae ipsam dolorem veniam consequuntur itaque vitae, placeat fuga, corrupti maxime quam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam minus quis suscipit, doloribus quod amet error culpa architecto enim quos aliquid, corporis unde voluptatum temporibus nostrum odio praesentium non.</p>
+
+        </div>
+        <div class="footer">
+            <h1>ini adalah bawahan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis architecto dicta, eaque sed nostrum doloribus placeat rerum fuga quos maiores sint esse! Vero obcaecati nam eaque praesentium in, incidunt totam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis modi officia reprehenderit sequi cumque eius quibusdam, omnis quisquam exercitationem consequatur magnam maxime accusantium libero adipisci quas consectetur aspernatur, harum ut.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
